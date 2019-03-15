@@ -301,9 +301,11 @@
     <Compile Include="Assets\NGUI\Scripts\Editor\EventDelegateEditor.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\FreeType.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\MinMaxRangeAttributeDrawer.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\NGUIAtlasInspector.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIContextMenu.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIEditorExtensions.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIEditorTools.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\NGUIFontInspector.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIHandles.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIHelp.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIJson.cs" />
@@ -368,6 +370,7 @@
     <Compile Include="Assets\NGUI\Scripts\Editor\UISliderEditor.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\UISnapshotPointEditor.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\UISpriteAnimationInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UISpriteCollectionEditor.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\UISpriteInspector.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\UIStretchEditor.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\UITableEditor.cs" />

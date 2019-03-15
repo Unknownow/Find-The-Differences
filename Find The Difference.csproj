@@ -404,6 +404,8 @@
     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenVolume.cs" />
     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenWidth.cs" />
     <Compile Include="Assets\NGUI\Scripts\Tweening\UITweener.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\NGUIAtlas.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\NGUIFont.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UI2DSprite.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UI2DSpriteAnimation.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIAnchor.cs" />
@@ -420,17 +422,18 @@
     <Compile Include="Assets\NGUI\Scripts\UI\UIRoot.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UISprite.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UISpriteAnimation.cs" />
+    <Compile Include="Assets\NGUI\Scripts\UI\UISpriteCollection.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UISpriteData.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIStretch.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UITextList.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
-    <Compile Include="Assets\Scripts\DrawGizmo.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\NextLevelPanel.cs" />
     <Compile Include="Assets\Scripts\ObjectList.cs" />
-    <Compile Include="Assets\Scripts\PauseMenu.cs" />
-    <Compile Include="Assets\Scripts\PlayerTouchController.cs" />
+    <Compile Include="Assets\Scripts\OutOfTimePanel.cs" />
+    <Compile Include="Assets\Scripts\PausePanel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />

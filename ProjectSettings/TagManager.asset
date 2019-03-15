@@ -8,6 +8,8 @@ TagManager:
   - Object Count
   - Timer
   - Pause Panel
+  - Next Level Panel
+  - Out Of Time Panel
   layers:
   - Default
   - TransparentFX
