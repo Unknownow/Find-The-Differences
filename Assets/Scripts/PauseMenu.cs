@@ -23,7 +23,7 @@ public class PauseMenu : MonoBehaviour {
     {
         Debug.Log("Pause");
         pausePanel.SetActive(true);
-        gameManager.stopTimer(true);
+        gameManager.stopTime(true);
     }
 
     public void resume()

@@ -204,10 +204,15 @@
     <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+    <Compile Include="Assets\Scripts\CustomGrid.cs" />
     <Compile Include="Assets\Scripts\DrawGizmo.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\MenuManager.cs" />
+    <Compile Include="Assets\Scripts\NextLevelPanel.cs" />
     <Compile Include="Assets\Scripts\ObjectList.cs" />
+    <Compile Include="Assets\Scripts\OutOfTimePanel.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\PausePanel.cs" />
     <Compile Include="Assets\Scripts\PlayerTouchController.cs" />
     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
     <None Include="Assets\NGUI\ReadMe - 3.11.4.txt" />

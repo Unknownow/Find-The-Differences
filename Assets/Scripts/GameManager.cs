@@ -8,24 +8,31 @@ public class GameManager : MonoBehaviour {
     private float seconds = 120;
     private float timerCooldown;
     private UILabel timer;
-    private Coroutine countDown;
+    private bool timeStop = false;
 	// Use this for initialization
 	void Start () {
         timerCooldown = seconds;
-        countDown = StartCoroutine(timeCountdown(1));
+        StartCoroutine(decreaseRemainingTimePerSecond(1));
         timer = GameObject.FindGameObjectWithTag("Timer").GetComponent<UILabel>();
+        timeStop = false;
     }
 	
 	// Update is called once per frame
 	void Update () {
+        Debug.Log(timeStop);
         if (timerCooldown >= 0)
         {
             timerCountdown();
+            /*
+             * if have any additional function add it before return!
+            */
+            return;
         }
+        outOfTime();
 	}
 
 
-
+    // Time countdown function
     private void timerCountdown()
     {
         float seconds = timerCooldown % 60;
@@ -42,17 +49,22 @@ public class GameManager : MonoBehaviour {
         timer.text = minutes.ToString("00") + ":" + seconds.ToString("00");
     }
 
-    IEnumerator timeCountdown(int seconds)
+    //decrease remaining time by *seconds every 1 second in real life
+    IEnumerator decreaseRemainingTimePerSecond(int seconds)
     {
         while (timerCooldown >= 0)
         {
-            yield return new WaitForSeconds(seconds);
-            timerCooldown -= 1;
+            if (!timeStop)
+            {
+                yield return new WaitForSeconds(seconds);
+                timerCooldown -= 1;
+            }
+            yield return new WaitForSeconds(0);
         }
-
     }
 
-    public void decreaseTimer(int seconds)
+    //decrease *seconds to remaining time
+    public void decreaseRemainingTimeBySecond(int seconds)
     {
         if(timerCooldown < seconds)
         {
@@ -62,13 +74,22 @@ public class GameManager : MonoBehaviour {
         timerCooldown -= seconds;
     }
 
-    public void stopTimer(bool stop)
+
+    /*
+     * stop timer countdown:
+     * true == stop
+     * false == continue
+    */
+    public void stopTime(bool stop)
     {
-        if (stop)
-        {
-            StopCoroutine(countDown);
-            return;
-        }
-        countDown = StartCoroutine(timeCountdown(1));
+        Debug.Log("time stop == " + stop);
+        timeStop = stop;
+    }
+
+    // Call when time is up
+    public void outOfTime()
+    {
+        //write code down here
+        gameObject.GetComponent<OutOfTimePanel>().openOutOfTimePanel();
     }
 }
